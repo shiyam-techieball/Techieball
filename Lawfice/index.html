@@ -9,6 +9,7 @@
     <!-- google icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,20 +21,21 @@
     <div class="main-container container">
 
         <!-- Location and Contact -->
-        <div class="location-contact">
-            <section class="section-container">
-                <p><span class="material-symbols-outlined">location_on</span>123 Street, New York, USA</p>
-                <p>Call Us for Inquiry:<span>+012 345 67890</span></p>
+        <header class="contact-bar">
+            <section class="contact-bar__container">
+                <p><span class="contact-bar__icon material-symbols-outlined">location_on</span>123 Street, New York, USA
+                </p>
+                <p>Call Us for Inquiry:<span class="contact-bar__number">+012 345 67890</span></p>
             </section>
-        </div>
+        </header>
 
         <!-- Navbar Section -->
-        <div class="main-nav">
-            <nav class="nav-container">
-                <div class="balanced">
-                    <h1><i class="fa-solid fa-scale-balanced"></i>Lawfice</h1>
-                </div>
-                <div class="navigation-link">
+        <nav class="navbar">
+            <nav class="navbar__container">
+                <article class="navbar__item">
+                    <h1 class="navbar__logo"><i class="fa-solid fa-scale-balanced"></i>Lawfice</h1>
+                </article>
+                <section class="navbar__menu">
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Practice Area</a>
@@ -42,45 +44,107 @@
                     <a href="#">Blog</a>
                     <a href="#">Pages</a>
                     <a href="#">Contact</a>
-                </div>
+                </section>
             </nav>
-        </div>
+        </nav>
 
 
         <!-- Hero Section -->
-        <main>
-            <section class="hero-banner">
-                <div class="legal-Partner">
-                    <div class="promo-hero">
-                        <p>Your Trusted</p>
-                        <p class="hero-span"><span>Legal</span> Partner</p>
+        <main class="hero">
+            <section class="hero__container">
 
-                        <div>An Award Winning Law Firm Since 1990</div>
+                <section class="hero__content">
+                    <div class="hero__title">
+                        <p>Your Trusted</p>
+                        <p><span class="hero__subtitle">Legal</span> Partner</p>
+
+                        <article class="hero__description">An Award Winning Law Firm Since 1990</article>
                     </div>
-                </div>
-                <div class="image">
-                    <img src="./img/hero-slider-2.jpg" alt="Hero Slider 2" width="500px" height="400px">
-                </div>
+                </section>
+
+                <article class="hero__image">
+                    <img src="./img/hero-slider-2.jpg" alt="Hero Slider 2">
+                </article>
             </section>
         </main>
 
 
 
         <!-- Award -->
-        <div class="divion-lawyer">
-            <div class="divion-lawyer-section">
-            <div class="award"><i class="fa-solid fa-award award-i"></i><span class="award-span">70</span>Award Winning</div>
-            <div class="our Lawyers"><i class="fa-solid fa-people-line award-i"></i><span class="award-span">500</span>Our Lawyers</div>
-            <div class="client-review"><i class="fa-solid fa-message award-i"></i><span class="award-span">7000</span>Client's Review</div>
+        <section class="award">
+            <div class="award__container">
+                <div class="award__content">
+                    <i class="fa-solid fa-award award__icon"></i>
+                    <span class="award__span">70</span>
+                    Award Winning
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-line award__icon"></i>
+                    <span class="award__span">500</span>
+                    Our Lawyers
+                </div>
+                <div>
+                    <i class="fa-solid fa-message award__icon"></i>
+                    <span class="award__span">7000</span>
+                    Client's Review
+                </div>
+
             </div>
-        </div>
-
-
-
-
-
+        </section>
     </div>
 
+
+    <!-- About Us -->
+    <section class="about">
+        <section class="about__container">
+
+            <!-- Right -->
+            <section class="about__container__item">
+                <img src="./img/about-1.jpg" alt="">
+            </section>
+
+            <!-- Left -->
+            <div class="about__aboutus">
+                <div class="about__aboutus__container">
+                    <div class="about__aboutus__content">
+                        <div class="about__aboutus__square"></div>
+                        <p>ABOUT US</p>
+                    </div>
+
+                    <p class="about__aboutus__meet">Meet the Firm Behind the Excellent Results</p>
+                    <p class="about__aboutus__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                        quaerat similique harum a esse, nesciunt mollitia, perferendis iusto pariatur vitae voluptate!
+                        Quibusdam incidunt accusamus tempora iste beatae atque nulla perspiciatis.</p>
+
+                    <h2 class="about__aboutus__choose">Why Choose Us!</h2>
+                    <p class="about__aboutus__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                        quaerat similique harum a esse, nesciunt mollitia, perferendis iusto pariatur vitae voluptate!
+                        Quibusdam incidunt accusamus tempora iste beatae atque nulla perspiciatis.</p>
+
+                    <section class="certified">
+                        <div class="certified__para">
+                            <div>
+                                <p class="certified__para__title"><i class="fa-solid fa-check"></i>Certified Lawyers</p>
+                                <p class="certified__para__title"><i class="fa-solid fa-check"></i>Proven Results</p>
+                                <p class="certified__para__title__2"><i class="fa-solid fa-check"></i>Free Consultaion</p>
+                            </div>
+                            <div>
+                                <p class="certified__para__title"><i class="fa-solid fa-check"></i>24/7 Support</p>
+                                <p class="certified__para__title"><i class="fa-solid fa-check"></i>Skilled Advocates</p>
+                                <p class="certified__para__title__2"><i class="fa-solid fa-check"></i>Successful Outcomes
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                    </section>
+
+                    <button>CONTACT US</button>
+                </div>
+            </div>
+        </section>
+    </section>
 
 </body>
 
