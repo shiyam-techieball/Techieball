@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 :root {
   --MAIN-COLOR: #262b3e;
@@ -53,7 +48,7 @@
 }
 
 /* Container */
-.container {
+.containerr {
   padding: 0 80px;
 }
 
@@ -63,11 +58,6 @@
   display: flex;
   justify-content: center;
   margin-top: 1.5em;
-  /* position: fixed;
-    top: 0;
-    width: 100%; */
-  /* position: sticky;
-    top: 0; */
 }
 
 .navbar__container {
@@ -202,6 +192,9 @@
 
 /* About Us */
 /* Left */
+.about{
+  margin-bottom: 100px;
+}
 .about .about__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -217,8 +210,8 @@
 
 .about__container__item img {
   width: 600px;
-  height: 600px;
-  margin-left: 100px;
+  height: 650px;
+  margin: 100px 0 0 100px;
 }
 
 /* Right */
