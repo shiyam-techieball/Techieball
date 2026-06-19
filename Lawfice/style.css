@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
 
 :root {
   --MAIN-COLOR: #262b3e;
@@ -192,7 +199,7 @@
 
 /* About Us */
 /* Left */
-.about{
+.about {
   margin-bottom: 100px;
 }
 .about .about__container {
@@ -290,6 +297,81 @@
   border: none;
   font-weight: 500;
   color: var(--BUTTON-FONT-COLOR);
+}
+
+@media screen and (max-width: 320px) {
+  .containerr {
+    padding: 0 15px;
+  }
+
+  .contact-bar .contact-bar__container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .contact-bar__container p {
+    flex-wrap: wrap;
+  }
+
+  .navbar .navbar__container {
+    flex-direction: column;
+  }
+
+  .navbar__container .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__container .navbar__menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .hero .hero__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px 0;
+  }
+
+  .hero__content .hero__title {
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  .hero__title p {
+    font-size: 2.5em;
+  }
+
+  .hero__title .hero__description {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .award .award__container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .award__container div {
+    min-width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 1em;
+  }
+
+  .award__container .award__span,
+  .award__container .award__icon {
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 600px) {
